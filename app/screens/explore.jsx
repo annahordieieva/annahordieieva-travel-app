@@ -1,13 +1,13 @@
 import { Entypo } from "@expo/vector-icons";
 import { useEffect, useState } from "react";
 import {
-    FlatList,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View,
+  FlatList,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from "react-native";
 
 const ExploreScreen = () => {
@@ -51,7 +51,7 @@ const ExploreScreen = () => {
   return (
     <ScrollView style={styles.container} contentContainerStyle={{ paddingBottom: 50 }}>
       {/* Welcome text */}
-      <Text style={styles.headerText}>Welcome!</Text>
+      <Text style={styles.headerText}>Welcome to Waya!</Text>
       <Text style={styles.regularText}>
         Explore the world,{"\n"}
         plan your itinerary and find top activities{"\n"}
@@ -62,11 +62,11 @@ const ExploreScreen = () => {
 
       {/* Search bar + scrollable results */}
       <View style={styles.searchWrapper}>
-        <TouchableOpacity
-          activeOpacity={1}
-          style={styles.searchBar}
-          onPress={handleSearchPress}
-        >
+          <TouchableOpacity
+            activeOpacity={1}
+            style={styles.searchBar}
+            onPress={handleSearchPress}
+          >
           <Entypo
             name="location-pin"
             size={24}
@@ -203,7 +203,7 @@ const styles = StyleSheet.create({
     width: 60,
     height: 60,
     borderRadius: 30,
-    backgroundColor: "#320BBE",
+    backgroundColor: "#7d7d7eff",
     justifyContent: "center",
     alignItems: "center",
   },
